@@ -1,10 +1,10 @@
 
-#my-projects-circle {
-    position: sticky;
-    z-index: 15;
+.my-projects-circle {
+    position: fixed;
+    z-index: 14;
     width: 100px;
     left: 55px;
-    top: 80vh;
+    top: 77vh;
 
     animation: rotation 20s infinite linear;
 }
@@ -20,4 +20,8 @@
 
 #my-projects-circle:hover {
     cursor: pointer;
+}
+
+#cv {
+    height: 130px;
 }

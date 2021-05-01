@@ -1,6 +1,8 @@
 #project-wrapper {
     position: relative;
     overflow: visible;
+    top: 15vh;
+    margin-bottom: 150px;
 }
 
 #first-piece {
@@ -16,7 +18,6 @@
     height: 560px;
 
     left: calc(40% - 439px/2);
-    background-color: #0BA1FF;
 
     transform: rotate(-23deg);
     transition: 0.3s;
@@ -53,3 +54,15 @@
     margin-top: 150px;
 }
 
+#car-bg-img-wrapper {
+    position: absolute;
+    overflow: hidden;
+    width: 1242px;
+    height: 699px;
+    margin-top: 150px;
+    right: 0;
+}
+
+#car-img-bg {
+    width: 100%;
+}

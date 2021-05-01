@@ -12,34 +12,84 @@ a:hover {
     cursor: pointer;
 }
 
+#welcome-bg {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
 #welcome {
     position: absolute;
     width: 100vw;
-    vertical-align: center;
-    top: 40vh;
+    top: 175px;
+    height: 100vh;
 
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
+    font-size: 24px;
+
 }
 
-.project-number {
+#white_shapes_wrapper {
+
+    width: 67vw;
+    height: 67vh;
+    overflow: hidden;
+
+    margin: auto auto;
+}
+
+#white_shapes {
     position: relative;
+    width: 100%;
+}
+
+#test {
+    position: absolute;
+    top: 30%;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    left: 30%;
+}
+
+#first-credit {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    top: 150px;
+}
+
+
+.project-number {
+    position: absolute;
 
     /*font-style: normal;
     font-weight: bold;
     font-size: 64px;
     line-height: 0.75;*/
     font: normal normal bold 163px/204px commuters-sans, sans-serif;
-    color: #7B7B7B;
+
 
     left: -28px;
-    top: 45vh;
+    top: 25vh;
+}
+
+#project-number1 {
+    color: #F8D2D9;
+}
+
+#project-number2 {
+    color: #FFAB75;
+}
+
+#project-number3 {
+    color: #BAC6D2;
 }
 
 #projects-container {
     position: relative;
-    margin-top: 100vh;
+    margin-top: 120vh;
 }
 
 
@@ -66,11 +116,15 @@ a:hover {
     transition: 0.3s;
 }
 
+.blob {
+    transform: scale(1.8) rotate(-120deg);
+}
+
 .project-img {
     position: relative;
     width: 439px;
     height: 559px;
-    background-color: #0BA1FF;
+
 }
 
 .project-info {
@@ -82,12 +136,26 @@ a:hover {
     font: normal normal 21px commuters-sans, sans-serif;
 }
 
+.prj-bg-img-wrapper {
+    position: absolute;
+    overflow: hidden;
+    width: 1106px;
+    height: 537px;
+    right: 0;
+}
+
+.prj-img-bg {
+    object-fit: contain;
+    width: 100%;
+}
+
 #carousel {
     position: relative;
     display: inline-flex;
 
     padding-top: 200px;
     padding-bottom: 200px;
+    top: 100px;
 }
 
 ul {

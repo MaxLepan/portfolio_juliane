@@ -1,18 +1,48 @@
-#logo {
-    position: relative;
-    width: 180px;
-    height: 128px;
+#logo_anim_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 15;
 
-    left: 82px;
-    background-color: darkblue;
+
 }
 
+.animation {
+    animation: smooth linear 0.2s;
+}
+
+@keyframes smooth {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+
+}
 
 header {
     position: relative;
-    top: 80px;
+    top: 50px;
     width: 100vw;
     display: inline-flex;
+    z-index: 1;
+}
+
+#logo-wrapper {
+    position: relative;
+    width: 83px;
+    height: 91px;
+
+    left: 50px;
+}
+
+#logo {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
 }
 
 nav {

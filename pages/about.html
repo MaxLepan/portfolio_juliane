@@ -8,52 +8,60 @@
 </head>
 <body>
 <!----------------HEADER------------------->
-    <header>
-        <div id="logo"></div>
-        <nav>
-            <div id="nav-content">
-                <a class="nav-item" href="../index.html">Prénom</a>
-                <a class="nav-item" id="about" href="about.html">A propos</a>
-            </div>
-        </nav>
-    </header>
+<header>
+    <div id="logo-wrapper"><img src="../media/Images/logo_BW2.png" id="logo" alt="BnW Logo"></div>
+    <nav>
+        <div id="nav-content">
+            <a class="nav-item" href="../index.html">Projets</a>
+            <a class="nav-item" id="about" href="about.html">À propos</a>
+        </div>
+    </nav>
+</header>
 
 <!----------------ABOUT------------------>
-    <div id="my-projects-circle" >
-        <img src="../media/SVG/mes_projets.svg" alt="Mes_Projets"/>
+    <div class="my-projects-circle" id="cv">
+        <img src="../media/SVG/mon_cv.svg" alt="Mes_Projets"/>
     </div>
 
     <div id="about-container">
         <div id="names-container">
-            <div id="name" class="secondary-text">Prénom</div>
+            <div id="name" class="secondary-text">Juliane</div>
             <div id="circle-separator"></div>
-            <div id="last-name" class="secondary-text">Nom</div>
+            <div id="last-name" class="secondary-text">Strappazzon</div>
+        </div>
+        <div id="abt-bg-img-wrapper">
+            <img src="../media/Images/Home.jpg" alt="fond en couleurs" id="abt-img-bg">
         </div>
         <div id="img-container">
-            <div id="img"></div>
+            <div id="img">
+                <svg class="blob" viewBox="0 -10 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#F8D2D9" d="M33.6,-47C47.8,-35.9,66.4,-31.8,74.1,-21C81.8,-10.3,78.6,7.1,69.9,19.3C61.2,31.5,47.1,38.5,34.6,47C22,55.5,11,65.5,-0.5,66.2C-12,66.9,-24.1,58.3,-38.5,50.4C-53,42.5,-69.9,35.4,-78.9,22.2C-88,9,-89.2,-10.2,-83.9,-27.6C-78.7,-45,-67.1,-60.6,-52,-71.4C-37,-82.1,-18.5,-88,-4.4,-81.9C9.7,-75.9,19.4,-58,33.6,-47Z" transform="translate(100 100)" />
+                </svg>
+            </div>
         </div>
         <div id="desc-container">
-            <div id="desc" class="secondary-text">Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta petamus, amicorum causa honesta faciamus, ne exspectemus quidem, dum rogemur; studium semper adsit, cunctatio absit; consilium vero dare audeamus libere. Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta petamus, amicorum causa honesta faciamus, ne exspectemus quidem, dum rogemur; studium semper adsit, cunctatio absit; consilium vero dare audeamus libere.</div>
+            <div id="desc" class="secondary-text">Je suis passionnée et intéressée par le webdesign, l’art et la photographie. Mon but, faciliter les expériences utilisateur grâce à des interfaces graphiques, esthétiques et de qualité, tout en répondant aux besoins des clients divers et variés. <br>Aujourd’hui en première année de Bachelor design web et mobile, j’ai de nombreux cours sur l’expérience utilisateur (UX) et interface utilisateur (UI).</div>
             <div id="social">
-                <a id="instagram" class="secondary-text social-media" >Instagram</a>
-                <a id="linkedin" class="secondary-text social-media">LinkedIn</a>
+                <a id="instagram" class="secondary-text social-media" href="https://www.instagram.com/juliane.strappazzon/" target="_blank">Instagram</a>
+                <a id="linkedin" class="secondary-text social-media" href="https://www.linkedin.com/in/juliane-strappazzon/" target="_blank">LinkedIn</a>
             </div>
         </div>
         <div id="soft-carousel"></div>
     </div>
 
-    <a href="mailto:nom@example.com" class="secondary-text" id="mail-contact">Me contacter par email <i class="las la-arrow-right"></i></a>
+    <a href="mailto:julianestrappazzon@gmail.com" class="secondary-text" id="mail-contact">Me contacter par email <i class="las la-arrow-right"></i></a>
 
 <!---------------FOOTER------------------>
-    <div id="footer">
-        <div id="footer-content">
-            <p id="credit">@PrenomNOM2021</p>
-            <div id="website-credits">
-                <p>Design par Apolline Grember et Juliane Strappazzon</p>
-                <p>Code par Max Lepan</p>
-            </div>
+<footer id="footer">
+    <div id="footer-content">
+        <div id="footer-bg-wrapper"><img id="footer-bg" src="../media/Images/formes_blanc.png"></div>
+        <p id="credit">@JulianeSTRAPPAZZON2021</p>
+        <div id="website-credits">
+
+            <p>Code par Max Lepan</p>
         </div>
     </div>
+</footer>
 
 <script type="module" src="../script.js"></script>
 </body>

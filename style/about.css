@@ -8,7 +8,7 @@
     height: 100vh;
     width: 100vw;
 
-    top: 10vh;
+    top: 15vh;
 }
 
 #names-container {
@@ -26,8 +26,7 @@
     height: 560px;
 
     left: calc(33% - 439px/2);
-    background-color: #0BA1FF;
-
+    top: 100px;
     transform: rotate(-23deg);
     transition: 0.3s;
 }
@@ -35,6 +34,19 @@
 #img-container:hover {
     transform: rotate(-10deg);
     transition: 0.3s;
+}
+
+#abt-bg-img-wrapper {
+    position: absolute;
+    overflow: hidden;
+    width: 1242px;
+    height: 699px;
+    right: 0;
+    top: 0;
+}
+
+#abt-img-bg {
+    width: 100%;
 }
 
 #desc-container {

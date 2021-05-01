@@ -19,15 +19,28 @@
     right: 0;
     text-align: right;
     vertical-align: center;
-    transform: translate(0, -25%);
+    transform: translate(0, 25%);
 }
 
 #credit {
     position: relative;
     float: left;
+    transform: translate(0, 25%);
 }
 
 #footer-content {
     transform: translate(0, 40%);
     vertical-align: center;
+}
+
+#footer-bg-wrapper {
+    position: absolute;
+    width: 1920px;
+    height: 100%;
+    top: -25px;
+    left: -91px;
+}
+
+#footer-bg {
+    width: 1920px;
 }
