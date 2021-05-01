@@ -98,7 +98,7 @@ a:hover {
     position: relative;
     height: 100vh;
     width: 100vw;
-
+    overflow: hidden;
 }
 
 .project-img-container {
@@ -117,13 +117,14 @@ a:hover {
 }
 
 .blob {
+    position: absolute;
     transform: scale(1.8) rotate(-120deg);
 }
 
 .project-img {
     position: relative;
     width: 439px;
-    height: 559px;
+    height: 570px;
 
 }
 
