@@ -30,13 +30,15 @@
             <div id="circle-separator"></div>
             <div id="last-name" class="secondary-text">Strappazzon</div>
         </div>
-        <div id="abt-bg-img-wrapper">
-            <img src="../media/Images/Home.jpg" alt="fond en couleurs" id="abt-img-bg">
-        </div>
         <div id="img-container">
-            <div id="img">
+            <div id="img" class="scale-up">
+
                 <svg class="blob" viewBox="0 -10 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#F8D2D9" d="M31.3,-39.3C42.4,-28,54.4,-19.9,61.7,-6.7C68.9,6.4,71.4,24.5,64.9,38.9C58.3,53.3,42.7,64,27.3,65.4C11.9,66.8,-3.4,59.1,-19,53C-34.6,47,-50.6,42.7,-58.6,32.2C-66.6,21.7,-66.7,5,-63.9,-11.4C-61.1,-27.7,-55.5,-43.6,-44.4,-54.8C-33.3,-66,-16.6,-72.6,-3.3,-68.7C10.1,-64.8,20.3,-50.5,31.3,-39.3Z" transform="translate(100 100)" />
+                    <defs>
+                        <clipPath id="blobView">
+                            <path fill="#F8D2D9" d="M31.3,-39.3C42.4,-28,54.4,-19.9,61.7,-6.7C68.9,6.4,71.4,24.5,64.9,38.9C58.3,53.3,42.7,64,27.3,65.4C11.9,66.8,-3.4,59.1,-19,53C-34.6,47,-50.6,42.7,-58.6,32.2C-66.6,21.7,-66.7,5,-63.9,-11.4C-61.1,-27.7,-55.5,-43.6,-44.4,-54.8C-33.3,-66,-16.6,-72.6,-3.3,-68.7C10.1,-64.8,20.3,-50.5,31.3,-39.3Z" transform="translate(220 220) scale(3)"/>
+                        </clipPath>
+                    </defs>
                 </svg>
             </div>
         </div>
@@ -63,7 +65,8 @@
         </div>
     </div>
 </footer>
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../scripts/about.js" type="module"></script>
 <script type="module" src="../script.js"></script>
 </body>
 </html>

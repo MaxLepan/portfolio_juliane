@@ -1,4 +1,5 @@
 const express = require('express');
+const dotenv = require('dotenv').config();
 const axios = require('axios');
 const app = express();
 const http = require('http').Server(app);
@@ -31,6 +32,6 @@ const requestDribbbleAPI = async (key, link, path) => {
 }
 
 
-requestDribbbleAPI(`?access_token=${process.env.API_KEY}`, '/getProjects', 'user/shots');
+requestDribbbleAPI(`?access_token=${process.env["API_KEY"]}`, '/getProjects', 'user/shots');
 
-requestDribbbleAPI(`?access_token=${process.env.API_KEY}`, '/getUser', 'user');
+requestDribbbleAPI(`?access_token=${process.env['API_KEY']}`, '/getUser', 'user');

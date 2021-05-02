@@ -170,4 +170,15 @@ ul {
     margin: 73px;
 
     background-color: #6F7070;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+}
+
+.carousel-img {
+    object-fit: cover;
+    display: block;
+    height: 99%;
+    width: 99%;
+    margin: auto;
 }

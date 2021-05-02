@@ -36,6 +36,14 @@
     transition: 0.3s;
 }
 
+#img {
+    clip-path: url(#blobView);
+}
+
+.scale-up {
+    transform: scale(1.3) translateX(70px);
+}
+
 #abt-bg-img-wrapper {
     position: absolute;
     overflow: hidden;
