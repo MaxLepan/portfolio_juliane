@@ -1,8 +1,8 @@
 const requestProjects = async () => {
-    const APIlocation = "http://localhost:3000/";
+    const APILocation = "http://localhost:3000/";
     //const APIlocation = "https://julianestrappazzon.herokuapp.com/";
 
-    const response = await axios.get(`${APIlocation}getProject`);
+    const response = await axios.get(`${APILocation}getProjects`);
 
     try {
         const datas = response.data;
