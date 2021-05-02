@@ -1,5 +1,5 @@
 import { minimum } from '../data/html';
-import Splide from '../../src/js/splide';
+import Splide from '../..';
 import { STATUS_CLASSES } from "../../src/js/constants/classes";
 import { COMPLETE } from '../../src/js/components';
 

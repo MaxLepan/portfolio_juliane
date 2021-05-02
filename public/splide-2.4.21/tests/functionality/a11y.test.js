@@ -1,5 +1,5 @@
 import { minimum } from '../data/html';
-import Splide from '../../src/js/splide';
+import Splide from '../..';
 import { sprintf } from '../../src/js/utils/utils';
 import { COMPLETE } from '../../src/js/components';
 

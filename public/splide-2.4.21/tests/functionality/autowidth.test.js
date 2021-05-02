@@ -1,5 +1,5 @@
 import { autoWidth } from '../data/html';
-import Splide from '../../src/js/splide';
+import Splide from '../..';
 import { COMPLETE } from '../../src/js/components';
 
 
