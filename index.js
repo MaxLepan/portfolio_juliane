@@ -2,17 +2,10 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 const http = require('http').Server(app);
+const cors = require('cors');
 const port = process.env.PORT || 3000;
-const accessToken = process.env.accessToken;
 
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-}
-
-
-http.listen(port, () => {
-    console.log(`http://localhost:${port}/`);
-});
+app.use(cors())
 
 app.use(express.static(__dirname + '/public'));
 
@@ -20,23 +13,24 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    res.setHeader('Access-Control-Allow-Credentials', true);
-    next();
+http.listen(port, () => {
+    console.log(`http://localhost:${port}/`);
 });
 
-async function request() {
-    const response = await axios.get(`https://api.dribbble.com/v2/user/shots?access_token=${accessToken}`)
+const requestDribbbleAPI = async (key, link, path) => {
+
+    const response = await axios.get(`https://api.dribbble.com/v2/${path}${key}`)
     try {
-        app.get("/getProject", (req, res) => {
+        app.get(link, (req, res) => {
             res.send(response.data)
         })
     } catch (err) {
         console.log(err)
     }
+
 }
 
-request()
+
+requestDribbbleAPI(`?access_token=${process.env.API_KEY}`, '/getProjects', 'user/shots');
+
+requestDribbbleAPI(`?access_token=${process.env.API_KEY}`, '/getUser', 'user');
