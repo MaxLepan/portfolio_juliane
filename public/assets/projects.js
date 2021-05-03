@@ -11,28 +11,31 @@ const requestProjects = async () => {
 
         datas.forEach(data => {
             console.log(data);
-            carouselProjectsWrapper.innerHTML += `
-                    <li class="splide__slide">
-                        <div id="${data.id}" class="carousel-projects">
-                            <img src="${data.images.hidpi}" class="carousel-img">
-                        </div>
-                        
-                    </li>`
 
-            for (let i = 0; i < datas.length; i++){
-                if (data.title !== datas[i].title){
-                    carouselProjectsWrapper.innerHTML += `
+            if (datas.find(element => element.title !== data.title) && data.description !== null){
+                carouselProjectsWrapper.innerHTML += `
                     <li class="splide__slide">
-                        <div id="${data.id}" class="carousel-projects">
+                        <a href="" id="${data.id}" class="carousel-projects">
                             <img src="${data.images.hidpi}" class="carousel-img">
-                        </div>
+                        </a>
                         
                     </li>`
-                }
             }
 
-            console.log(data);
         })
+
+        let projects = document.querySelectorAll(".carousel-projects");
+
+        projects.forEach(project => {
+            const idProject = project.getAttribute("id");
+
+            let location = document.location.origin;
+
+            let projectUrl = `${location}/pages/project_page.html?projectId=${idProject}`;
+
+            project.href = projectUrl;
+        })
+
     } catch (err) {
         console.log(err);
     }

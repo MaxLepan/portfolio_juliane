@@ -14,8 +14,9 @@
 #main-prj-img-container {
     position: absolute;
     display: inline-block;
-    width: 440px;
-    height: 560px;
+    width: 480px;
+    height: 570px;
+    overflow: hidden;
 
     left: calc(40% - 439px/2);
 
@@ -26,6 +27,14 @@
 #main-prj-img-container:hover {
     transform: rotate(-10deg);
     transition: 0.3s;
+}
+
+#main-prj-img {
+    position: absolute;
+    left: -120%;
+    top: -57%;
+    height: 217%;
+    object-fit: cover;
 }
 
 #project-name-type {
@@ -43,6 +52,12 @@
     margin-right: 146px;
 
     top: 10%;
+}
+
+.prj-img-wrapper {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .prj-imgs {
