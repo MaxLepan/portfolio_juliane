@@ -60,7 +60,6 @@ a:hover {
     top: 150px;
 }
 
-
 .project-number {
     position: absolute;
 
@@ -92,8 +91,6 @@ a:hover {
     margin-top: 120vh;
 }
 
-
-
 .projects {
     position: relative;
     height: 100vh;
@@ -107,8 +104,12 @@ a:hover {
     left: calc(50% - 439px/2);
     vertical-align: center;
 
+    width: 450px;
+    height: 570px;
+
     transform: rotate(-23deg);
     transition: 0.3s;
+    overflow: hidden;
 }
 
 .project-img-container:hover {
@@ -118,13 +119,14 @@ a:hover {
 
 .blob {
     position: absolute;
-    transform: scale(1.8) rotate(-120deg);
+    transform: scale(1.75) rotate(-120deg);
 }
 
 .project-img {
-    position: relative;
-    width: 439px;
-    height: 570px;
+    position: absolute;
+    top: -60%;
+    left: -130%;
+    height: 220%;
 
 }
 
