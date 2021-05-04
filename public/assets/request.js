@@ -1,7 +1,8 @@
 export const requestServer = async (path) => {
-    const locationApi = "http://localhost:3000/"
+    //const APILocation = "http://localhost:3000/"
+    const APILocation = "https://julianestrappazzon.herokuapp.com/";
 
-    const response = await axios.get(`${locationApi}${path}`)
+    const response = await axios.get(`${APILocation}${path}`)
 
     try {
         return response
