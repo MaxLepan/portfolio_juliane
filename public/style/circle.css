@@ -18,9 +18,9 @@
     }
 }
 
-/*.my-projects-circle:hover {
+.my-projects-circle:hover {
     cursor: pointer;
-}*/
+}
 
 #cv {
     height: 130px;

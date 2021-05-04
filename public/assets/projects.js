@@ -9,7 +9,7 @@ const requestProjects = async () => {
     try {
         const datas = response.data;
 
-        datas.forEach(data => {
+        datas.reverse().forEach(data => {
 
             if (datas.find(element => element.title !== data.title) && data.description !== null){
                 carouselProjectsWrapper.innerHTML += `
