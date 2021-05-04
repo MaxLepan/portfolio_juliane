@@ -10,7 +10,6 @@ const requestProjects = async () => {
         const datas = response.data;
 
         datas.forEach(data => {
-            console.log(data);
 
             if (datas.find(element => element.title !== data.title) && data.description !== null){
                 carouselProjectsWrapper.innerHTML += `

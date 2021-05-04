@@ -55,15 +55,22 @@
 }
 
 .prj-img-wrapper {
+    position: relative;
+    width: 1150px;
+    height: 560px;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 150px;
+    overflow: hidden;
 }
 
 .prj-imgs {
-    width: 1150px;
-    height: 560px;
-    border: solid black 2px;
+    position: absolute;
+    left: -19%;
+    top: -84%;
+    height: 215%;
+
     margin-right: auto;
     margin-left: auto;
     margin-top: 150px;

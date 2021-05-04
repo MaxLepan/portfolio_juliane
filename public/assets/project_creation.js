@@ -9,8 +9,11 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 
         const data = response.data
 
+        console.log(data)
+
         let projectId = parseInt(params.get('projectId'))
         const projectOnPage = data.findIndex(project => project.id.toString() === projectId.toString())
+
         /*const currentProjectIndex = data.findIndex(project => project.id === projectId)
 
 
@@ -32,6 +35,7 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 */
 
         const singleProject = document.getElementById("project-wrapper")
+
 
         let singleProjectImg = data[projectOnPage].images.hidpi;
 
@@ -67,6 +71,22 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
                     </div>-->
                 </div>
         `
+
+        const secondaryImgCContainer = document.querySelector("#prj-img-container");
+
+        data.forEach(imgData => {
+
+            if (imgData.description === null && data[projectOnPage].title === imgData.title) {
+
+                secondaryImgCContainer.innerHTML += `
+                                                <div class="prj-img-wrapper">
+                                                    <img src="${imgData.images.hidpi}" class="prj-imgs">
+                                                </div>
+            `
+            }
+
+        })
+
 
         if (description === null) {
             const description = document.getElementById("description")
