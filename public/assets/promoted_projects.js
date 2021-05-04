@@ -24,7 +24,7 @@ const requestProjects = async () => {
                     projectNumber = "1";
                 } else if (data.tags.find(element => element === "2")){
                     projectNumber = "2";
-                } else if (data.tags.find(element => element === "1")){
+                } else if (data.tags.find(element => element === "3")){
                     projectNumber = "3"
                 }
 
