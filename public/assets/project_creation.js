@@ -72,13 +72,13 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
                 </div>
         `
 
-        const secondaryImgCContainer = document.querySelector("#prj-img-container");
+        const secondaryImgContainer = document.querySelector("#prj-img-container");
 
         data.forEach(imgData => {
 
             if (imgData.description === null && data[projectOnPage].title === imgData.title) {
 
-                secondaryImgCContainer.innerHTML += `
+                secondaryImgContainer.innerHTML += `
                                                 <div class="prj-img-wrapper">
                                                     <img src="${imgData.images.hidpi}" class="prj-imgs">
                                                 </div>
@@ -86,12 +86,6 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
             }
 
         })
-
-
-        if (description === null) {
-            const description = document.getElementById("description")
-            description.style.color = "transparent"
-        }
 
         /*if (allowTag) {
             document.getElementById("texts").innerHTML += `<div class="tags-row"></div>`
