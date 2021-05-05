@@ -43,8 +43,6 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
             singleProjectImg = data[projectOnPage].images.normal;
         }
 
-        let description = projectOnPage.description
-
         let projectTitleType = data[projectOnPage].title.split(" - ");
 
         singleProject.innerHTML = `
