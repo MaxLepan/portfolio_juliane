@@ -12,7 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1dc62d36-0f2a-4043-8eaa-e6d27e79c29f" name="Default Changelist" comment="Added project page + fixed bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/project_creation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/project_creation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scripts/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scripts/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +74,7 @@
       <workItem from="1619593081565" duration="11791000" />
       <workItem from="1619862089120" duration="825000" />
       <workItem from="1620216204318" duration="4306000" />
+      <workItem from="1620286909942" duration="3651000" />
     </task>
     <task id="LOCAL-00001" summary="Added import in script.js">
       <created>1619451404733</created>
