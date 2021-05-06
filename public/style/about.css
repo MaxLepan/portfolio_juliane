@@ -9,6 +9,7 @@
     width: 100vw;
 
     top: 15vh;
+    overflow: hidden;
 }
 
 #names-container {
