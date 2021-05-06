@@ -14,27 +14,9 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
         let projectId = parseInt(params.get('projectId'))
         const projectOnPage = data.findIndex(project => project.id.toString() === projectId.toString())
 
-        /*const currentProjectIndex = data.findIndex(project => project.id === projectId)
-
-
-        let nextProjectIndex = currentProjectIndex + 1
-        let previousProjectIndex = currentProjectIndex - 1
-
-
-        if (previousProjectIndex === -1) {
-            previousProjectIndex = data.length - 1
-        }
-
-        if (nextProjectIndex === data.length) {
-            nextProjectIndex = 0
-        }
-
-
-        let nextProjectUrl = `${location}/${link}/pages/single_project.html?projectId=${data[nextProjectIndex].id}`
-        let previousProjectUrl = `${location}/${link}/pages/single_project.html?projectId=${data[previousProjectIndex].id}`
-*/
 
         const singleProject = document.getElementById("project-wrapper")
+        let title = document.querySelector("title");
 
 
         let singleProjectImg = data[projectOnPage].images.hidpi;
@@ -44,6 +26,8 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
         }
 
         let projectTitleType = data[projectOnPage].title.split(" - ");
+
+        title.innerHTML = data[projectOnPage].title;
 
         singleProject.innerHTML = `
                 <div id="first-piece">
@@ -63,10 +47,7 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
                     <div id="skills-carousel"></div>
                 </div>
                 <div id="prj-img-container">
-                <!--IMAGES SECONDAIRES-->
-                    <!--<div id="prj-img1" class="prj-imgs">
-                        <img src="$singleProjectImg}" height="100%" class="prj-img-wrapper">
-                    </div>-->
+
                 </div>
         `
 
