@@ -4,6 +4,7 @@ let img = document.querySelector("#img-container")
 const requestUser = async () => {
     //const APILocation = "http://localhost:3000/";
     const APIlocation = "https://julianestrappazzon.herokuapp.com/";
+    
 
     const response = await axios.get(`${APILocation}getUser`);
 
