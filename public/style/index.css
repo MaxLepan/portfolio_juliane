@@ -67,7 +67,8 @@ a:hover {
     font-weight: bold;
     font-size: 64px;
     line-height: 0.75;*/
-    font: normal normal bold 163px/204px commuters-sans, sans-serif;
+    font: bold 163px/204px commuters-sans, sans-serif;
+    font-weight: 700;
 
 
     left: -28px;
