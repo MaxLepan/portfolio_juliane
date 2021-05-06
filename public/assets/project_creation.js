@@ -66,23 +66,5 @@ export const singleProjectCreation = (getProject, /*link,*/ allowTag = true) => 
 
         })
 
-        /*if (allowTag) {
-            document.getElementById("texts").innerHTML += `<div class="tags-row"></div>`
-            const tagsRow = document.querySelector('.tags-row')
-            const tags = projectOnPage.tags
-
-            if (tags.indexOf("nothomepage") !== -1) {
-                const indexTag = tags.indexOf("nothomepage")
-                tags.splice(indexTag, 1)
-            }
-
-            tags.forEach((tag, id) => {
-                if (id < 3) {
-                    tagsRow.innerHTML += `<p class="tag">${tag}</p>`
-                }
-            })
-
-        }*/
-
     })
 }
